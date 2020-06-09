@@ -19,18 +19,19 @@ sub get_item_color_as_ansi {
 }
 
 1;
-# ABSTRACT: Provide get_item_color_as_ansi()
+# ABSTRACT: Roles for using ColorTheme::* with ANSI codes
 
 =head1 DESCRIPTION
 
-Can be mixed in with a C<ColorTheme::*> class.
+Can be mixed in with a C<ColorTheme::*> class. Handy when using color theme in
+terminal.
 
 
 =head1 PROVIDED METHODS
 
-=head2 get_item_color_to_ansi
+=head2 get_item_color_as_ansi
 
-Like get_item_color(), but returns ANSI code.
+Like get_item_color(), but returns color already converted to ANSI code.
 
 
 =head1 SEE ALSO
